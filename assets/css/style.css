@@ -61,6 +61,9 @@ h4 {
 
 .section-heading {
     font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 /* ------------------------------------------------Heading */
@@ -204,4 +207,15 @@ footer {
 
 #footer-details {
     padding: 20px;
+}
+
+/* ------------------------------------------------Three Reasons */
+
+.three-reasons-icone {
+    font-size: 26px;
+    color: #e67e22;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
 }
