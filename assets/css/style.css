@@ -13,12 +13,24 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-skills {
+    background-color: #ffffff;
+}
+
 .bg-color-work-history {
     background-color: #9b59b6;
 }
 
 .bg-color-contact {
     background-color: #fff;
+}
+
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
+    background-color: #ffffff;
 }
 
 .ui-menu-color-home {
@@ -34,7 +46,22 @@
 }
 
 .ui-menu-color-download {
+    background-color: #d9a81d;
+}
+
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
     background-color: #525252;
+    color: #555555;
 }
 
 /* ------------------------------------------------Special paddings/margins/text */
@@ -65,12 +92,6 @@ h4 {
     display: table;
 }
 
-.section-column {
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;
-}
-
 .history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
@@ -95,6 +116,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
+    transition: all .5s ease-in-out;
     -moz-transition: all .10s ease-in-out;
     -webkit-transition: all .10s ease-in-out;
 }
@@ -116,20 +138,11 @@ header {
     color: #fff;
 }
 
-.list-inline-item:not(:last-child) {
-    margin: 0;
-}
-
-.menucontainer {
-    font-size: 0;
-}
-
 #nav {
     margin: 0;
 }
 
 #nav li {
-    font-size: 14px;
     padding: 0;
 }
 
@@ -180,18 +193,19 @@ footer {
     margin: 0;
 }
 
-.cv-pdf i {
-    font-size: 18px;
+footer .cv-pdf i {
     color: #fafafa;
     text-align: center;
+    font-size: 18px;
     padding-left: 5px;
+}
+
+footer .cv-pdf i:hover {
+    color: #e84610;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-}
-.cv-pdf i:hover {
-    color: #e84610;
 }
 
 .social-links {
@@ -219,7 +233,7 @@ footer {
 }
 
 #footer-details {
-    padding: 20px;
+    margin: 20px;
 }
 
 /* ------------------------------------------------Three Reasons */
@@ -253,6 +267,7 @@ footer {
 }
 
 .personal-info-item .key {
+    display: inline-block;
     width: 30%;
     margin-right: 21px;
     padding-top: 2px;
@@ -264,6 +279,7 @@ footer {
 }
 
 .personal-info-item .value {
+    display: inline-block;
     position: relative;
     width: 60%;
 }
@@ -290,11 +306,6 @@ footer {
 }
 
 /* ------------------------------------------------Work History */
-
-.history-heading {
-    color: #fafafa;
-    margin-bottom: 50px;
-}
 
 .timeline-item {
     padding: 4em 2em 0em 2em;
@@ -333,6 +344,15 @@ footer {
     background: #fafafa;
 }
 
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.history-items {
+    margin-bottom: 30px;
+}
+
 /* ------------------------------------------------Contact Form */
 
 .contact-heading {
@@ -355,9 +375,19 @@ button[type="submit"] {
     background-color: #e84610;
 }
 
-/* ------------------------------------------------Media Queries */
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}
+
+/*--------------------------------------------Media Queries*/
 
 @media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
 
     .center-form {
         padding-top: 30px;
